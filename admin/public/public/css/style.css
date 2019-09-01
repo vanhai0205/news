@@ -1,0 +1,90 @@
+
+body{
+	background: #f8f9fa !important;
+  font-family: 'Barlow', sans-serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Alegreya Sans', sans-serif;
+
+}
+.header{
+	background: white;
+}
+.navbar{
+ font-size: 18px;
+ font-weight: bold;
+}
+.slide {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .heading{
+	padding: 50px 0px;
+	background: white;
+}
+.title{
+	text-align: center;
+}
+
+
+/*xử lí ảnh sản phẩm hover*/
+.box {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto; 
+  width: auto; 
+  max-height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+
+.middle button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: 0px solid #4CAF50;
+  padding:10px 20px;
+  margin:10px;
+  
+}
+.pro{
+  text-transform:uppercase;
+}
+.middle a:hover{
+  text-decoration: none;
+  color: white;
+}
+.middle a{
+  text-decoration: none;
+  color: white;
+}

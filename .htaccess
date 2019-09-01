@@ -1,0 +1,29 @@
+
+RewriteEngine On
+
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^home$ index.php
+RewriteRule ^index.html$ index.php
+RewriteRule ^lien-he$ contact.php
+RewriteRule ^tim-kiem$ search.php
+RewriteRule ^404.html$ 404.php
+
+
+
+
+
+RewriteRule ^([a-zA-Z0-9-]+)$ type.php?url=$1
+RewriteRule ^([a-zA-Z0-9-()]+).html$ content.php?url=$1
+
+
+
+
+# RewriteRule ^/?secret.txt$ - [F,L]
+<Files "secret.txt">
+    deny from all
+</Files>
+
+
+ErrorDocument 404 /fpt/404.php
+ErrorDocument 403 /fpt/404.php
+
