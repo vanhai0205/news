@@ -16,11 +16,8 @@ class DBConnect{
 		}
 	}
 	//hàm update/delete/insert
-	function executeQuery($sql,$options=[]){
+	function executeQuery($sql){
 		$this->stsm = $this->conn->prepare($sql);
-		if(count($options) > 0 || !empty($options)){
-			return $this->stsm->execute($options);
-		};
 		return $this->stsm->execute();
 	}
 	//hàm lấy nhiều dòng
